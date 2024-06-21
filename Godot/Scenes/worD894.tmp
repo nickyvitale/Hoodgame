@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsdjn18m8j3bn"]
+
+[ext_resource type="PackedScene" uid="uid://ci1o4rjd1xxnl" path="res://player.tscn" id="1_lt4ya"]
+[ext_resource type="PackedScene" uid="uid://oa2nayfa7kwt" path="res://slime.tscn" id="2_pohnc"]
+
+[node name="World" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "WE IN WORLD"
+
+[node name="Player" parent="." instance=ExtResource("1_lt4ya")]
+position = Vector2(221, 159)
+scale = Vector2(10, 10)
+
+[node name="Slime" parent="." instance=ExtResource("2_pohnc")]
+position = Vector2(985, 461)
+scale = Vector2(10, 10)
